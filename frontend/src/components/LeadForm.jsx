@@ -24,7 +24,7 @@ export default function LeadForm() {
     setLoading(true);
     setSuccess(false);
     try {
-      await axios.post("http://localhost:3000/api/leads", formData, { withCredentials: true });
+      await axios.post("https://leadpilot-c87l.onrender.com/api/leads", formData, { withCredentials: true });
       setSuccess(true);
       setFormData({
         name: '',
