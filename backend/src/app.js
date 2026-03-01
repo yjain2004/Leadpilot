@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
+app.set('trust proxy', 1);
 
 // importing lead.routes 
 const leadRoutes = require("./routes/lead.routes");
 
 //importing auth routes
 const authRoutes = require("./routes/admin/auth.routes");
-
 app.use(cookieParser());
 app.use(express.json());
 
