@@ -14,7 +14,7 @@ app.use(express.json());
 //configuring dotenv removed, now in server.js
 
 const cors = require('cors');
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+app.use(cors({ origin: 'https://leadpilot-inky.vercel.app', credentials: true }));
 
 app.use("/api/leads", leadRoutes);
 app.use("/api/admin", authRoutes);
